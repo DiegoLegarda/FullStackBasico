@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        body {
+            background-color: #50c274;
+        }
+
+        header {
+            background-color: brown;
+            color: white;
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeladosPepito</title>
+</head>
+
+
+
+<body style="background-color: chartreuse;">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pepito.html">Pepito</a></li>
+                <li><a href="nuevo.html">Nuevo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <h1 style="text-align: center; color:brown; font-family:Verdana, Geneva, Tahoma, sans-serif;">Helados Pepito</h1>
+
+    
+
+    <main>
+        <div id="formRegistro">
+            <form autocomplete="off">
+                <label for="nombre">Ingrese su nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="ingrese el nombre" autofocus required><br>
+                <label for="apellidos">Ingrese su apellido: </label>
+                <input type="text" id="apellidos" name="apellidos"><br>
+                <p>Cuentenos cual es su lenguaje favorito:</p>
+                <input type="radio" id="html" name="lenguaje" value="html">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="lenguaje" value="css">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="js" name="lenguaje" value="js">
+                <label for="js">JavaScript</label><br>
+                <p>Indiquenos cuales son sus medios de transporte</p>
+                <input type="checkbox" id="auto" name="medioTransporte" value="automovil">
+                <label for="auto">Automóvil</label><br>
+                <input type="checkbox" id="moto" name="medioTransporte" value="motocicleta">
+                <label for="moto">Motocicleta</label><br>
+                <input type="checkbox" id="bici" name="medioTransporte" value="bicicleta">
+                <label for="bici">Bicicleta</label><br>
+                <label for="marcaAuto">Cual es la marca de auto favorita</label>
+                <select name="marcaAuto" id="marcaAuto" size="1" multiple>
+                    <option value="toyota">Toyota</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="ford">Ford</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="honda">Honda</option>
+                </select><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Este es un mensaje solo para leer"
+                    value="solo lectura" style="resize:none; width:300px; height:200px;"></textarea><br>
+                <label for="contraseña">Ingrese su contraseña: </label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="ingrese la contraseña"><br>
+                <label for="color">Seleccione un color: </label>
+                <input type="color" id="color" name="color"><br>
+                <label for="fecha">Seleccione una fecha: </label>
+                <input type="date" id="fecha" name="fecha"><br>
+                <input type="month" id="mes" name="mes"><br>
+                <input type="file" id="archivo" name="archivo" multiple><br>
+                <input type="hidden" id="oculto" name="oculto" value="oculto"><br>
+                <input type="number" id="numero" name="numero" min="-10" max="10" step="0.1" value="5"><br>
+                <input type="email" id="correo" name="correo" placeholder="ingrese el correo">
+                <span pattern=>correo@algo.com</span><br>
+                <input type="text" id="phoneHome" name="tCasa" placeholder="ingrese el telefono" autocomplete="off"><br>
+                <input list="lista">
+                <datalist id="lista" name="lista">
+                    <option value="opcion1"></option>
+                    <option value="opcion2"></option>
+                    <option value="opcion3"></option>
+                    <option value="opcion4"></option>
+                    <option value="opcion5"></option>
+                </datalist>
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+    </main>
+
+    <footer>Este es el pie de pagina
+
+    </footer>
+</body>
+
+</html>
