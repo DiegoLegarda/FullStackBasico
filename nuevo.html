@@ -3,19 +3,6 @@
 
 <head>
     <link rel="stylesheet" href="estilos.css">
-    <style>
-        body {
-            background-color: #50c274;
-        }
-
-        header {
-            background-color: brown;
-            color: white;
-            text-align: left;
-            padding: 10px;
-        }
-    </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeladosPepito</title>
@@ -23,8 +10,8 @@
 
 
 
-<body style="background-color: chartreuse;">
-    <header>
+<body >
+    <header>       
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -33,19 +20,24 @@
             </ul>
         </nav>
     </header>
-    
+    <div  >
+        <img class="contTexto" src="Imagenes/helados.jpg" style="height: 200px;height: 200px;" alt="helado">
+    </div>
 
-    <h1 style="text-align: center; color:brown; font-family:Verdana, Geneva, Tahoma, sans-serif;">Helados Pepito</h1>
+    <h1 class="contTexto fondoVerde">Helados Pepito</h1>
 
-    
 
+    <div class="contTexto fondoVerde">
+        <h2>Helados Pepito</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, adipisci voluptates placeat blanditiis provident dolorem aperiam. Beatae ipsa aut magnam exercitationem eveniet? Praesentium vel obcaecati iusto velit quidem, similique porro dolorem eum maxime minima et eveniet atque aut delectus ipsam molestiae possimus eligendi! Quis, numquam iste. Ea amet quidem aliquid consequuntur obcaecati ratione iste. Ipsam eligendi iusto beatae vero molestias deserunt vel incidunt illum, ratione quia aspernatur mollitia, aliquam eos. Dolores fugit neque itaque aliquam suscipit. Omnis repudiandae exercitationem ipsum animi nesciunt in quasi vitae rem? Iste, consequuntur fugit officiis doloribus aperiam corporis adipisci maxime harum eum id dolorem nam.</p>
+    </div>
     <main>
-        <div id="formRegistro">
-            <form autocomplete="off">
+        <div >
+            <form class="contFormulario"autocomplete="off">
                 <label for="nombre">Ingrese su nombre: </label>
                 <input type="text" id="nombre" name="nombre" placeholder="ingrese el nombre" autofocus required><br>
                 <label for="apellidos">Ingrese su apellido: </label>
-                <input type="text" id="apellidos" name="apellidos"><br>
+                <input type="text" id="apellidos" name="apellidos" required><br>
                 <p>Cuentenos cual es su lenguaje favorito:</p>
                 <input type="radio" id="html" name="lenguaje" value="html">
                 <label for="html">HTML</label><br>
@@ -69,7 +61,7 @@
                     <option value="honda">Honda</option>
                 </select><br>
                 <textarea id="mensaje" name="mensaje" placeholder="Este es un mensaje solo para leer"
-                    value="solo lectura" style="resize:none; width:300px; height:200px;"></textarea><br>
+                    value="solo lectura" style="resize:none; width:70%; height:200px;"></textarea><br>
                 <label for="contraseña">Ingrese su contraseña: </label>
                 <input type="password" id="contraseña" name="contraseña" placeholder="ingrese la contraseña"><br>
                 <label for="color">Seleccione un color: </label>
