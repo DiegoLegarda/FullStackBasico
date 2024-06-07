@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nuevo{
+    background-color: aqua;
+}
+#pepito{
+    background-color: red;
+}
+#registro{
+    background-color: rgb(77, 77, 18);
+}
+#registro:hover{
+    background-color: blue;
+}
+
+.barra{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding: 5px;
+    background-color: rgb(202, 202, 35);
+}
+
+.barra img{
+    width: 50px;
+    height: 50px;
+    margin-left: 2px;
+}
+.barra a{
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.barra a:hover{
+    color:blueviolet;
+}
+.barra ul{
+    display: flex;
+    list-style: none;
+}

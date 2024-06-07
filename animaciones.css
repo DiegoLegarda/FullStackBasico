@@ -1,0 +1,113 @@
+@font-face{
+    font-family: 'fuenteMia';
+    src: url('fuentes/futura-md-bt/futuramc.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes rotacion{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    } 
+}
+
+@keyframes colorfuente{
+    0%{
+        color:beige;
+    }
+    25%{
+        color: blueviolet;
+    } 
+    50%{
+        color: rgb(89, 226, 43);
+    }
+    75%{
+        color: beige;
+    }
+    100%{
+        color: blueviolet;
+    }
+}
+
+@keyframes escala{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes imagen{
+    0%{
+        opacity:1 ;
+    }
+    50%{
+        opacity:0 ;
+    }
+    100%{
+        opacity:1;
+    }
+
+}
+.contenedorprincipal{
+    width: 100%;
+    height: 50vh;    
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;    
+    background-color: #f1f1f1;
+
+}
+
+.contenedorprincipal div{
+    width: 50%;    
+    background-color: coral;
+    border:5px solid black;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    align-content: center;    
+}
+
+div h1{
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    font-family:'fuenteMia',sans-serif; 
+       
+}
+/*
+div h1:hover{
+    animation: rotacion,colorfuente,escala;
+    animation-duration: 5s,5s,2s;
+    animation-iteration-count: 2,2,2;    
+}*/
+#contImagen{
+   /* width: 500%;*/
+    height: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+

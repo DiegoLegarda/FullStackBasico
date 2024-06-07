@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7a6e6e;
+    
+}
+.contenedor p{
+    font-size:3vw;
+}
+.contenedor{
+    display:grid;
+    grid-template-areas: "zona1 zona2 zona3";
+    padding:10px;
+    gap: 10px;
+    border:3px solid black;
+    background-color: chocolate;
+}
+.contenedor div{
+    color: white;
+    border: 2px solid red;
+    text-align: center;
+    box-shadow: -5px -5px 5px rgb(216, 20, 20);  
+    
+}
+#caja1{
+    grid-area: zona1;
+}
+#caja2{
+    grid-area: zona2;
+}
+#caja3{
+    grid-area: zona3;
+}
+.contenedor img{    
+    width:100%;   
+    aspect-ratio: 16 / 9;    
+}
+
+header{
+    width:100%;
+    height: 30vh;
+    background-image:url(Imagenes/imagen3.jpg);
+    background-repeat: none;
+    background-size:100% 100%;
+    border: 5px solid black;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    color:crimson;
+    font-size: 5vw;
+} 
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #f17575;
+        
+    }
+    
+    .contenedor{
+        grid-template-areas: "zona1" "zona2" "zona3";
+    
+    }
+    header{
+        height: 200px;
+    
+    } 
+}
+@media only screen and (min-width: 601px) {
+    body{
+        background-color: #1f358c;
+        
+    }
+    .contenedor{
+        grid-template-areas: "zona1 zona2" "zona3 zona3";    
+    }  
+}
+@media only screen and (min-width: 820px) {
+    body{
+        background-color: #4cbe22;
+        
+    }
+    .contenedor{
+        grid-template-areas: "zona1 zona2 zona3";    
+    }   
+}
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: rgb(230, 204, 173);
+    }
+  }
+  
+

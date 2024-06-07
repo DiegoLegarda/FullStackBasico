@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7a6e6e;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #f17575;
+        font-size: 60px;
+    } 
+}
+@media only screen and (min-width: 601px) {
+    body{
+        background-color: #1f358c;
+        font-size: 40px;
+    } 
+}
+@media only screen and (min-width: 820px) {
+    body{
+        background-color: #4cbe22;
+        font-size: 20px;
+    } 
+}
+
+

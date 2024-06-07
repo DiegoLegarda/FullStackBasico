@@ -1,23 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Xanh+Mono:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #F9E0BB;
+    text-align: center;
+
 }
 header{
     background-color: #FFC26F;
 }
 main{
     background-color: #FFC26F;
+    
 }
+
+.contenedorFlex{
+    display: flex;    
+    justify-content:center;
+    align-items:center;
+    border: solid 5px red;
+    padding: 20px;
+    font-size: 5px;
+}
+
+.contImagenes{       
+    margin:1px;
+    padding:0px;
+    background-color: #C38154;
+    border: 3px solid #070707;
+    border-radius: 10px;    
+}
+
+.contImagenes p{      
+    color:rgb(3, 3, 3);    
+    text-align: justify;      
+    background-color: #FFC26F;
+    text-shadow: 2px 1px 10px red;    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+       
+}
+
+
+.contImagenes h1{
+    display: inline;
+    color:blue;   
+    text-shadow: -2px -1px 1px red;
+}
+
+.contImagenes img{
+    width:90%;
+    height:40px;    
+}
+
+
 .contDescripcion{
-    background-color: #884A39;
+    background-color:rgb(77, 34, 151);
+    margin:10px;
+    border: 3px solid #070707;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 30px;
+        
 }
+
 .contServicios{
     background-color: #C38154;
+    margin:10px auto 20% 10%;
 }
 
 .contDescripcion p{
     color: #F9E0BB;
 }
-
 .contDescripcion h1{
+    background-color: rgb(87, 41, 41);
     color: #F9E0BB;
+    border:3px solid #070707;
+    border-radius: 10px;
 }

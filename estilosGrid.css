@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr;    
+    grid-template-areas:'encabezado encabezado encabezado'
+                        'barraNavegacion principal derecha'
+                        'barraNavegacion pie derecha' ;   
+    align-content:stretch;   
+    gap:2px 2px;
+    border: 3px solid red;
+}
+
+.principal{
+    grid-area:principal;
+    border: 3px solid black;
+}
+.encabezado{    
+    grid-area:encabezado;        
+    border:3px solid black;  
+}
+
+.barraNavegacion{
+    grid-area:barraNavegacion; 
+    border: 3px solid black;
+}
+
+.piePagina{    
+    grid-area:pie;  
+    border: 3px solid black;
+}
+
+.derecha{
+    grid-area:derecha;
+    border:3px solid black;
+}
